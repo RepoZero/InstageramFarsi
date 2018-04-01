@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="ir.smrahmadi.instageramfarsi.view.Main"
+    android:gravity="bottom">
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp" />
+
+    <eu.long1.spacetablayout.SpaceTabLayout
+        android:id="@+id/spaceTabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:number_of_tabs="five"
+        app:starting_position="one"
+        app:icon_one="@drawable/home"
+        app:icon_two="@drawable/search"
+        app:icon_three="@drawable/add_box"
+        app:icon_four="@drawable/heart"
+        app:icon_five="@drawable/person"
+
+        />
+
+</android.support.design.widget.CoordinatorLayout>

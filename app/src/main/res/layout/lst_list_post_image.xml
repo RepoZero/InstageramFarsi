@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="0dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/lst_postImage_imgProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@mipmap/ic_launcher_round"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/lst_postImage_txtName"
+            style="@style/Txt"
+            android:layout_weight="1"
+            android:text="Name" />
+
+
+        <ImageView
+            android:id="@+id/lst_postImage_imgMenu"
+            android:layout_margin="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/more"
+            android:clickable="true"
+            android:focusable="true"/>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/lst_postImage_Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:foregroundGravity="center"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bmw"
+        tools:ignore="MissingConstraints"
+        android:clickable="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:id="@+id/lst_postImage_imgLike"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/favorite_outline"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <ImageView
+                    android:id="@+id/lst_postImage_imgComments"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/comment"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+
+                <ImageView
+                    android:id="@+id/lst_postImage_imgSend"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/send"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+
+            <ImageView
+                android:id="@+id/lst_postImage_imgDownload"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/download"
+                android:clickable="true"
+                android:focusable="true"/>
+
+
+            <ImageView
+                android:id="@+id/lst_postImage_imgBookmark"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/bookmark_border"
+                android:clickable="true"
+                android:focusable="true"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Test Text"
+        android:id="@+id/lst_postImage_txtDesc"
+
+        style="@style/Txt"/>
+
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
